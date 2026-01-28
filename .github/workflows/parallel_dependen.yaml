@@ -2,7 +2,7 @@ name: firt-workflow
 on: [push]
 
 jobs:
-    run-shell-commands:
+  run-shell-commands:
         runs-on: ubuntu-latest
         steps:
             - name: echo a string
@@ -11,16 +11,14 @@ jobs:
               run: |
                 node -v
                 npm -v
-parallel-job-macos:
+  parallel-job-macos:
         runs-on: macos-latest
         steps:
             - name: View macOS version
               run: sw_vers
-dependent-job:
+  dependent-job:
         needs: run-shell-commands
         runs-on: ubuntu-latest
         steps:
             - name: Dependent Job Step
               run: echo "This job runs after the other two jobs complete."
-            - name: Error Simulation
-              run: sdosdjosdjos
