@@ -18,6 +18,7 @@ jobs:
           run: |
             pwd
             ls -a
+            pwd
             echo $GITHUB_WORKSPACE
             echo $GITHUB_SHA
-            echo $GITHUB_Repository
+            echo $GITHUB_REPOSITORY
