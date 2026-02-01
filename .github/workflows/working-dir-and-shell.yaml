@@ -10,7 +10,7 @@ jobs:
             ls -a
             echo $GITHUB_WORKSPACE
             echo $GITHUB_SHA
-            echo $GITHUB_Repository
+            echo $GITHUB_REPOSITORY
   display-wd-info-windows:
     runs-on: windows-latest
     steps:
