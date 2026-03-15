@@ -9,3 +9,4 @@ jobs:
                 echo "SHA: $GITHUB_SHA"
                 echo "Ref: $GITHUB_REF"
             - uses: actions/checkout@v3
+            - uses: actions/checkout@v3
