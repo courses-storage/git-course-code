@@ -1,0 +1,13 @@
+name: Workflow Run
+on:
+    workflow_run:
+        workflows: [Repository Events]
+        types: [completed]
+jobs:
+    echo-string:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                echo "Workflow Run was Triggered because the Repository Events workflow completed."
+                echo "SHA: $GITHUB_SHA"
+                echo "Ref: $GITHUB_REF"
